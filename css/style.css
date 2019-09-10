@@ -15,13 +15,13 @@ a {
 
 .header {
   width: 100%;
-  height: 800px;
+  padding-bottom: 190px;
   background-color: #eff0f2;
   opacity: 0.99;
 }
 
 .header__nav {
-  padding: 65px 150px;
+  padding: 65px 0;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -33,6 +33,10 @@ a {
   height: 46px;
   border: 6px solid #170f1c;
   text-align: center;
+}
+
+.header__logo:hover {
+  opacity: .5;
 }
 
 .site__name {
@@ -61,8 +65,9 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1170px;
   width: 100%;
+  padding: 0 15px;
 }
 
 .header__text-wrap {
@@ -120,16 +125,18 @@ a {
 .header__glass img {
   position: absolute;
   top: -15px;
-  right: 235px;
+  right: 85px;
 }
 
 .section__about-us,
-.section__featured {
+.section__featured,
+.section__services {
   margin-top: 125px;
 }
 
-.section__about-us h1,
-.section__featured h1 {
+.section__about-us h2,
+.section__featured h2,
+.section__services h2 {
   font-size: 38px;
   font-weight: 700;
   line-height: 28px;
@@ -140,7 +147,8 @@ a {
 }
 
 .section__about-us>p,
-.section__featured>p {
+.section__featured>p,
+.section__services>p {
   font-family: 'Merriweather', serif;
   font-size: 18px;
   font-weight: 400;
@@ -187,10 +195,36 @@ a {
 
 .section__banners {
   margin-top: 120px;
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .section__banners img {
-  padding: 0 15px 10px 0;
+  margin-bottom: 15px;
+}
+
+.section__banners img:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.section__services-block {
+  display: flex;
+  margin-top: 120px;
+  flex-wrap: wrap;
+}
+
+.section__services-block-650 {
+  border: 1px solid red;
+  width: 650px;
+  height: 422px;
+  margin: 15px;
+}
+
+.section__services-block-430 {
+  border: 1px solid green;
+  width: 430px;
+  height: 422px;
+  margin: 15px;
 }
