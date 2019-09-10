@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -35,7 +36,6 @@ a {
 }
 
 .site__name {
-  font-family: 'Montserrat', sans-serif;
   text-shadow: 0 0 2px rgba(21, 21, 22, 0.75);
   color: #000;
   font-size: 17px;
@@ -53,16 +53,16 @@ a {
 }
 
 .burger__menu {
-  width: 30px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #000000;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
   opacity: 0.6;
 }
 
 .container {
-  margin: auto;
-  width: 1440px;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .header__text-wrap {
@@ -70,14 +70,127 @@ a {
   height: 113px;
   margin: 0 auto;
 }
+
 .header__header-text {
   text-align: center;
   text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
   color: #505050;
-  font-family: 'Montserrat', sans-serif;
   font-size: 45px;
   font-weight: 700;
   line-height: 55px;
   letter-spacing: 2.3px;
   text-transform: uppercase;
+}
+
+.header__header-text>p span {
+  background-color: rgba(188, 244, 234, .7);
+}
+
+.header__contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.header__contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 232px;
+  height: 53px;
+  border: 2px solid #777879;
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.16px;
+}
+
+.header__contact-btn:hover {
+  background-color: rgba(188, 244, 234, .5);
+}
+
+.header__glass {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.header__glass img {
+  position: absolute;
+  top: -15px;
+  right: 235px;
+}
+
+.section__about-us,
+.section__featured {
+  margin-top: 125px;
+}
+
+.section__about-us h1,
+.section__featured h1 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2.28px;
+  margin-bottom: 16px;
+}
+
+.section__about-us>p,
+.section__featured>p {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.08px;
+  opacity: 0.6;
+}
+
+.section__about-info {
+  margin-top: 145px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.section__about-text {
+  width: 480px;
+  height: 415px;
+}
+
+.section__about-text h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 28px;
+}
+
+.section__about-text p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+  opacity: 0.7;
+}
+
+.section__about-text p+p {
+  margin-top: 45px;
+}
+
+.section__banners {
+  margin-top: 120px;
+  display: block;
+  text-align: center;
+}
+
+.section__banners img {
+  padding: 0 15px 10px 0;
 }
