@@ -222,9 +222,40 @@ a {
   margin: 15px;
 }
 
+.section__services-block-650 h3,
+.section__services-block-430 h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.section__services-block-650 p,
+.section__services-block-430 p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+}
+
 .section__services-block-430 {
   border: 1px solid green;
   width: 430px;
   height: 422px;
   margin: 15px;
+}
+
+.section__services-block-650:first-child {
+  background-color: #6df6eb;
+}
+
+.section__services-block-650 h3:first-child {
+  margin-top: 63px;
+  margin-left: 66px;
+}
+
+.section__services-block-650 > p:first-child {
+  margin-left: 66px;
 }
